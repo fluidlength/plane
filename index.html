@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самоуправление</title>
+</head>
+<body>
+    <video autoplay muted loop playsinline class="video-bg">
+    <source src="fone.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео на фоне.
+  </video>
+    <div class="main">
+        <h1>День, который вы запомните</h1>
+        <p>Первый день самоуправления. Формально — мы рулим школой. По-настоящему — у нас есть один день, чтобы сделать что-то, чего раньше не было</p>
+        <p>Идея простая</p>
+        <p>Завтра, 2 октября, на каждой перемене выходи в коридор с бумажным самолётиком с надписью: «Свободу попугаям»</p>
+        <p>Запускай</p>
+        <p>Чем больше вас будет, тем дольше это будут помнить</p>
+        <p>Не хочешь самолётики — придумай своё. День самоуправления для того и существует</p>
+        <p>Завтра. Каждая перемена. Коридоры</p>
+    </div>
+    <div class="marquee-bottom">
+        <div class="marquee-track">
+    <span>Идея и реализация: Вупсень и Пупсень(2026) &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>Идея и реализация: Вупсень и Пупсень(2026) &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>Идея и реализация: Вупсень и Пупсень(2026) &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>Идея и реализация: Вупсень и Пупсень(2026) &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>Идея и реализация: Вупсень и Пупсень(2026) &nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+    </div>
+</body>
+<style>
+    h1, p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+        font-size: 24px;
+    }
+    h1 {
+        animation: blink 0.75s infinite;
+        font-size: 36px;
+    }
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+            }
+        50% {
+            opacity: 0;
+            }
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .wrapper {
+        max-width: 800px;
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .marquee-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #70b9ed;
+        color: #fff;
+        padding: 10px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: sans-serif;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .marquee-track {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee-scroll 10s linear infinite;
+    }
+
+    .marquee-track span {
+        display: inline-block;
+    }
+    @keyframes marquee-scroll {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
+</style>
+</html>
